@@ -1,0 +1,4 @@
+SELECT concat(t2.nombre,'-',t1.nombre) as nombre, link, genero 
+FROM temas t1 Inner join cantantes t2 
+on t1.cantante = t2.id
+order by genero,nombre asc
